@@ -20,7 +20,7 @@ bootstrap-dialog
 
 ## 从贡献者使用时代启示
 
-<a href="https://gist.github.com/Genkilabs/bdcc5f62c5b46a8e0904">How to use bootstrap-dialog as Rails 4 confirm</a> - @[Genkilabs](https://github.com/Genkilabs)
+<a href="https://gist.github.com/Genkilabs/bdcc5f62c5b46a8e0904">如何使用bootstrap-对话框，轨道4,5确认</a> - @[Genkilabs](https://github.com/Genkilabs)
 
 ================
 ##可使用的 CDN
@@ -31,13 +31,13 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dia
 ```
 ================
 
-## Install using Bower
+## 安装使用Bower
 
 ```
 bower install bootstrap-dialog
 ```
 
-Or
+或
 
 ```
 bower install bootstrap3-dialog
@@ -45,15 +45,15 @@ bower install bootstrap3-dialog
 
 ================
 
-## Build instructions:
+## 构建指令:
 
-Prepare:
+准备:
 
 ```
 npm install
 ```
 
-Build:
+建立:
 
 ```
 gulp dist
@@ -61,4 +61,4 @@ gulp dist
 
 ================
 
-Licensed under The MIT License.
+在MIT许可.
