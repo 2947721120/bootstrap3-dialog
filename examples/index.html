@@ -8,7 +8,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
 <meta charset="utf-8" />
-<title>BootstrapDialog examples</title>
+<title>Bootstrap对话框演示</title>
 <style>
     .login-dialog .modal-dialog {
         width: 300px;
@@ -17,7 +17,7 @@
 </head>
 <body style="padding-bottom: 100px;">
 <div class="container">
-    <h2>Make use of Bootstrap's modal more monkey-friendly.</h2>
+    <h2>利用Bootstrap的模式更友好</h2>
     <hr />
     <p>
         Monkeys love the <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal Dialog from Bootstrap</a>, but they're getting angry because they have to write this stuff:
@@ -28,19 +28,19 @@
         What they want is more like this:
     </p>
     <div class="source-code runnable">
-        BootstrapDialog.alert('I want banana!');
+        BootstrapDialog.alert('我要香蕉！');
     </div>
     <p></p>
     <p>
-        Like it? See <a href="#available-options">Available Options</a> or try more <a href="#examples">Examples</a> below. 
+       喜欢它？ 看到<a href="#available-options">可选项</a> 或尝试更多<a href="#examples">演示</a> 在下面.
     </p>
     
     <!-- Examples -->
     <a name="examples"></a>
-    <h2>Examples</h2>
+     <h2>示例</h2>
     <hr />
-    
-    <h3>Simplest</h3>
+    <h2>最简单</h2> </p>
+    <h3>只提供信息展示,并保持所有其他的事情默认.</h3>
     <p>Provide only the message to show, and keep all other things default.</p>
     <div class="source-code runnable">
         <!--
@@ -50,7 +50,7 @@
         -->
     </div>
     
-    <h3>Dialog Title</h3>
+    <h3>对话框标题</h3>
     <div class="source-code runnable">
         <!--
         BootstrapDialog.show({
@@ -61,7 +61,7 @@
     </div>
     
     <a name="manipulating-title-message"></a>
-    <h3>Manipulating Dialog Title</h3>
+    <h3>操纵对话框标题</h3>
     <div class="source-code runnable">
         <!--
         BootstrapDialog.show({
@@ -82,7 +82,7 @@
         -->
     </div>
     
-    <h3>Manipulating Dialog Message</h3>
+    <h3>操纵对话消息</h3>
     <div class="source-code runnable">
         <!--
         BootstrapDialog.show({
@@ -104,10 +104,11 @@
     </div>
 
     <a name="loading-remote-page"></a>
-    <h3>Loading remote page (1)</h3>
+    <h3>加载远程页面 (1)</h3>
     <p>
-        There are some workarounds for loading remote page into BootstrapDialog as message, one of those workarounds is as below. <br />
-        Check out the <a href="./remote.html" target="_blank">remote.html</a>.
+       有一些解决方法加载远程页面到BootstrapDialog的消息，这些解决方法之一是如下。 . <br />
+      <br/>
+        退出  <a href="./remote.html" target="_blank">remote.html</a>.
     </p>
     <div class="source-code runnable">
         <!--
@@ -117,10 +118,10 @@
         -->
     </div>
     
-    <h3>Loading remote page (2)</h3>
+    <h3>加载远程页面(2)</h3>
     <p>
-        Another solution of loading remote page into BootstrapDialog. <br />
-        This one is more flexible and customizable, but it's also a bit more complicated to use.
+        加载远程页面到BootstrapDialog的另一个解决方案。 <br />
+       这一个是更加灵活和可定制的，但它也是一个比较复杂的使用。
     </p>
     <div class="source-code runnable">
         <!--
@@ -139,7 +140,7 @@
         -->
     </div>    
     
-    <h3>Buttons</h3>
+    <h3>多按钮</h3>
     <div class="source-code runnable">
         <!--
         BootstrapDialog.show({
@@ -166,15 +167,15 @@
         -->
     </div>
     
-    <h3>Manipulating Buttons</h3>
+    <h3>操纵按钮</h3>
     <p>
-        Buttons that created by BootstrapDialog have some extra functions available: <br />
+        通过BootstrapDialog创建的按钮有一些额外的功能可供选择： <br />
         $button.toggleEnable(true|false); <br />
-        $button.enable(); // Equals to $button.toggleEnable(true); <br />
-        $button.disable(); // Equals to $button.toggleEnable(false); <br />
+        $button.enable(); // 等于 $button.toggleEnable(true); <br />
+        $button.disable(); // 等于to $button.toggleEnable(false); <br />
         $button.toggleSpin(true|false); <br />
-        $button.spin(); // Equals to $button.toggleSpin(true);<br />
-        $button.stopSpin(); // Equals to $button.toggleSpin(false);<br />
+        $button.spin(); // 等于 $button.toggleSpin(true);<br />
+        $button.stopSpin(); // 等于 $button.toggleSpin(false);<br />
     </p>
     <div class="source-code runnable">
         <!--
@@ -195,7 +196,7 @@
                 id: 'btn-1',
                 label: 'Click to disable and spin.',
                 action: function(dialog) {
-                    var $button = this; // 'this' here is a jQuery object that wrapping the <button> DOM element.
+                    var $button = this; // “this'这里是一个jQuery对象，封装与<button> DOM元素。'this' here is a jQuery object that wrapping the <button> DOM element.
                     $button.disable();
                     $button.spin();
                     dialog.setClosable(false);
@@ -206,11 +207,11 @@
     </div>
     
     <a name="button-hotkey"></a>
-    <h3>Button Hotkey</h3>
+    <h3>按钮热键</h3>
     <p>
-        Try to press the keys that have been associated with buttons below. <br /> 
-        The <strong>last button</strong> is disabled so nothing is going to happen when pressing its hotkey. <br />
-        Please note that if there are some components that require keyboard operations in your dialog, conflicts may occur, you can try next example.
+        尝试按已低于按钮相关联的键。 <br /> 
+       这是 <strong>最后一个按钮</strong>被禁止的，没有什么会按它的热键时发生。 <br />
+        请注意，如果其中有一些组件需要键盘操作在对话框中，可能会发生冲突，你可以尝试下一个例子。
     </p>
     <div class="source-code runnable">
         <!--
@@ -222,15 +223,15 @@
             },
             buttons: [{
                 label: '(A) Button A',
-                hotkey: 65, // Keycode of keyup event of key 'A' is 65.
+                hotkey: 65, // 关键的'A'keyup事件的键码为65。Keycode of keyup event of key 'A' is 65.
                 action: function() {
-                    alert('Finally, you loved Button A.');
+                    alert('最后，A按钮.');
                 }
             }, {
                 label: '(B) Button B',
                 hotkey: 66,
                 action: function() {
-                    alert('Hello, this is Button B!');
+                    alert('最后，你按钮 B!');
                 }
             }, {
                 id: 'button-c',
@@ -244,8 +245,7 @@
         -->
     </div>
     
-    <h3>Keys Conflicts</h3>
-    <p>Try to avoid doing similar in your code.</p>
+   最后，你爱A按钮
     <div class="source-code runnable">
         <!--
         BootstrapDialog.show({
